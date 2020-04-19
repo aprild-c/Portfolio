@@ -26,11 +26,8 @@ SECRET_KEY = os.environ['PORTFOLIO_SECRET_KEY']
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 ALLOWED_HOSTS = ['aprildottincarter.com', 'polar-refuge-56247.herokuapp.com', '127.0.0.1']
 
-# CSRF_COOKIE_SECURE = True
 
 SECURE_BROWSER_XSS_FILTER = True
-
-SESSION_COOKIE_SECURE = True
 
 
 # Application definition

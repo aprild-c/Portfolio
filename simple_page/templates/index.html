@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+{% block stylesheet %}
+<link href="../static/homeStylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto Condensed" />
+{% endblock %}
+{% block page_content %}
+<div id="content">
+    <div id="initial_view">
+        <h1>April Dottin-Carter</h1>
+        <h2>ASPIRING WEB DEVELOPER</h2>
+        <img class="quote" src="../static/quotes1.png">
+        <img class="quote" src="../static/quotes2.png">
+        <img class="quote" src="../static/quotes3.png">
+    </div>
+    <div id="mid_view">
+        <h2>I love to design and build</h2>
+        <h1>WEBSITES.</h1>
+    </div>
+
+    <div id="bottom_view">
+        <table id="about_table">
+            <tr>
+                <td>
+                    <h1>Hello,</h1>
+                    <h2>my name is April. I'm from Cambridge, Massachusetts, and I'm currently a student at Amherst College
+                        pursuing a B.A. in Computer Science. At school, I run Women in Computer Science Club and work as
+                        a specialist in our IT Department. I like to procrastinate homework by creating fun websites,
+                        watching reality shows, and reading my daily horoscope (I'm a Taurus).<br><br>
+                        I am always in search of new opportunities that will expand my web development skills and
+                        immerse me in impactful projects.<br><br>
+                        <b>Would you like to collaborate?</b><br><br>
+                        <a href="mailto:aprilskye25@gmail.com?subject=Mail from Personal Site">Contact Me</a>
+                    </h2>
+                </td>
+                <td>
+                    <img src="../static/pic1.JPG">
+                </td>
+            </tr>
+        </table>
+        <h3 id="copyright">Website made with &#9825; by April Dottin-Carter</h3>
+    </div>
+</div>
+{% endblock %}

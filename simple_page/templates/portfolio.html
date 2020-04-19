@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %} Portfolio {% endblock %}
+{% block stylesheet %}
+<link href="../static/portfolioStylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto Condensed" />
+{% endblock %}
+{% block page_content %}
+    <div id="initialView">
+        <h2>Here is a collection of my past and current projects.</h2>
+    </div>
+    <div class="project" id="WiCS">
+        <h1>Amherst College's Women in Computer Science Club</h1>
+        <h2>As president of the WiCS Club, I created a website to provide information about our mission and
+            events throughout the school year. The site also allows those who are interested join our mailing list.
+            I integrated a Google Calendar plug-in to assure all events are up to date and can be easily edited in an
+            external Google Calendar for club events and meetings.</h2>
+        <a href="https://WiCSAmherst.herokuapp.com">View Project</a>
+    </div>
+    <div class="project" id="meme">
+        <h1>MEME SEARCH-INATOR</h1>
+        <h2>During my summer at Google's Computer Science Summer Institute, I worked with two other participants to
+            create a website that works as a search engine for memes. I designed and developed the internal social
+            network for users. I also worked in the backend to allow users to register, login, and logout using their
+            existing Google accounts.</h2>
+        <a href="https://Meme-Search-Inator.appspot.com">View Project</a>
+    </div>
+    <div class="project" id="classroom">
+        <h1> Classroom Anonymous</h1>
+        <h2>My current and ongoing project is an educational tool that makes it easier for students to speak up about
+            their comfortability with newly learned topics. A typical scenario would begin with the teacher asking their
+            students, "Have you understood everything in today's class?" Their students would then press thumbs up or thumbs
+            down on their devices to reflect their confidence, and the teacher is provided with the anonymous classroom responses.</h2>
+    </div>
+
+
+
+
+
+
+{% endblock %}

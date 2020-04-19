@@ -1,0 +1,29 @@
+body {
+    font-family: 'glacial_indifferenceregular';
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.navbar p {
+    float: right;
+    font-size: 2vh;
+    user-select: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding-right: 1.3vw;
+    padding-left: 1.3vw;
+}
+
+.navbar a:hover {
+    color: #e9a75c;
+}

@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %} Resume {% endblock %}
+{% block stylesheet %}
+<link href="../static/resumeStylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto Condensed" />
+{% endblock %}
+{% block page_content %}
+<!--<div id="navbarBlock"></div>-->
+<div id="content">
+        <table id="resumeTable">
+        <tr>
+            <td id="bio">
+                <img src="../static/Edited-Forward.jpg">
+                <h1>APRIL <br>DOTTIN-CARTER</h1>
+                <h3>ASPIRING WEB DEVELOPER</h3>
+            </td>
+
+            <td id="resume">
+                <h1 class="category">PROFILE</h1>
+                <h3 class="descriptions">I am seeking a software engineering internship, specifically working on a team focused on front end web
+                    development. In high school, I interned at Audible Inc., participated in Google's Computer Science Summer
+                    Institute, and took a summer web programming course at Harvard. Now, I am running Women in Computer Science
+                    Club at Amherst College. I hope that this summer I will have an opportunity that will expand my web development
+                    skills and immerse me in impactful projects. </h3>
+
+                <h1 class="category">RELEVANT COURSEWORK</h1>
+                {% for course in courses %}
+                <div class="block">
+                    <h1>{{course.title}}</h1>
+                    <h2>
+                        {{course.school}} | {{course.date_ended}}
+                    </h2>
+                </div>
+                {% endfor %}
+
+                <h1 class="category">EXPERIENCE</h1>
+                {% for experience in experiences %}
+                <div class="block">
+                    <h1>{{experience.company}} - {{experience.role}}</h1>
+                    <h2>
+                        {% if experience.current == 1%}
+                        {{experience.date_started}} - now
+                        {% else %}
+                        {{experience.date_started}} - {{experience.date_ended}}
+                        {% endif %}
+                    </h2>
+                    <div class="descriptions"><h3>{{experience.description}}</h3></div>
+                </div>
+                {% endfor %}
+
+                <h1 class="category">EXTRACURRICULARS</h1>
+                {% for extracurricular in extracurriculars %}
+                <div class="block">
+                    <h1>{{extracurricular.title}}</h1>
+                    <h2>
+                        {% if extracurricular.current == 1%}
+                        {{extracurricular.date_started}} - now
+                        {% else %}
+                        {{extracurricular.date_started}} - {{extracurricular.date_ended}}
+                        {% endif %}
+                    </h2>
+                    <h3 class="descriptions">{{extracurricular.description}}</h3>
+                </div>
+                {% endfor %}
+
+                <h1 class="category">PROGRAMMING SKILLS</h1>
+                <table id="skillTable">
+                    {% for skill in skills %}
+                    <tr>
+                        <td><h2>{{skill.skill}}</h2></td>
+                        <td class="skillsMeasure">
+                            {% if skill.level == 2 %}
+                            <br><h2>&#9679;&#9679;&#9675;&#9675;&#9675;</h2>
+                                <h3>Familiar With</h3>
+                            {% elif skill.level == 3 %}
+                                <br><h2>&#9679;&#9679;&#9679;&#9675;&#9675;</h2>
+                                <h3>Proficient</h3>
+                            {% elif skill.level == 4 %}
+                                <br><h2>&#9679;&#9679;&#9679;&#9679;&#9675;</h2>
+                                <h3>Advanced</h3>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div id="contactLinks">
+        <h3>
+            <a href="mailto:aprilskye25@gmail.com?subject=Mail from Personal Site">aprilskye25@gmail.com</a><br>
+            <a href="/">www.aprildottincarter.com</a><br>
+            GITHUB: <a href="https://github.com/aprild-c">https://github.com/aprild-c</a><br>
+            <a href="../static/tech_resume.pdf" id="cv">Download CV</a>
+        </h3>
+    </div>
+</div>
+{% endblock %}

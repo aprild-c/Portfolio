@@ -1,0 +1,137 @@
+
+.navbar {
+    z-index: 1;
+}
+
+.navbar, .navbar a {
+    color: #472525;
+}
+
+.navbar a:hover {
+    color: black;
+}
+#content {
+    z-index: -1;
+}
+
+#contactLinks {
+    color: #4e4e4e;
+    position: absolute;
+    bottom: 3vh;
+    left: 4.6vw;
+}
+
+#resumeTable {
+    position: absolute;
+    top: 0;
+    width: 99vw;
+    height: 100vh;
+    color: #4e4e4e;
+}
+
+#bio {
+    padding-left: 4vw;
+}
+
+#bio img {
+    width: 32vw;
+}
+
+#bio h1 {
+    color: #e9a75c;
+    font-size: 2.5vw;
+    letter-spacing: 0.8vw;
+    font-family: 'glacial_indifferencebold';
+}
+
+h2 {
+    font-size: 1.3vw;
+    letter-spacing: 0.4vw;
+    font-family: 'glacial_indifferencebold';
+}
+
+h3 {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.15vw;
+}
+
+#resume {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 7vh;
+    padding-left: 42vw;
+    padding-right: 5vw;
+    height: 92.9vh;
+    overflow: auto;
+}
+
+.category {
+    background-color: #e9a75c;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+    font-family: glacial_indifferencebold;
+}
+
+#resume h2 {
+    letter-spacing: unset;
+    line-height: 0vh;
+    font-family: glacial_indifferenceregular;
+}
+
+#resume h3 {
+    letter-spacing: unset;
+}
+
+.block h1 {
+    font-size: 1.4vw;
+    font-family: glacial_indifferencebold;
+}
+
+.block h3 {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.descriptions {
+    text-align: justify;
+    text-justify: distribute;
+
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+#contactLinks h3 {
+    line-height: 1.8vw;
+}
+
+#cv {
+    color:#472525;
+}
+
+#skillTable {
+    width: 100%;
+}
+
+#skillTable td {
+    width: 50%;
+}
+.skillsMeasure {
+    padding-right: 0;
+}
+.skillsMeasure h2, .skillsMeasure h3{
+    float: right;
+    line-height: 5vh;
+    margin-block-end: 0;
+    margin-top: 0;
+}
+
+.skillsMeasure h2 {
+    font-size: 2vw;
+}

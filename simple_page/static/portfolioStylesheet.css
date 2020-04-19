@@ -1,0 +1,94 @@
+#initialView {
+    background-image: url("../static/InitialPortfolioBackground.png");
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background-size: 100vw 100%;
+    color: white;
+}
+
+#initialView h1, #initialView h2 {
+    padding-left: 65vw;
+    padding-right: 5vw;
+}
+
+#initialView h1 {
+    padding-top: 15vmin;
+    color: #e9a75c;
+    font-size: 3vw;
+}
+
+#initialView h2 {
+    padding-top: 15vmin;
+    letter-spacing: 0.3vw;
+    font-size: 2.5vw;
+    /*font-family: glacial_indifferenceitalic;*/
+
+}
+
+#initialView, .project {
+    width: 100vw;
+    left: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.project {
+    margin-top: 100vh;
+    height: 110vmin;
+    position: absolute;
+    text-align: center;
+    background-size: 100vw 100%;
+
+}
+
+#WiCS {
+    top: 0;
+    background-image: url("../static/WiCSBackground.png");
+}
+
+#meme {
+    top: 109.8vmin;
+    background-image: url("../static/MemeSearchInatorBackground.png");
+}
+
+#classroom {
+    height: 100vmin;
+    top: 219.7vmin;
+    background-image: url("../static/ClassroomAnonymousBackground.png");
+}
+
+.project h1, .project h2 {
+    padding-left: 55vw;
+    padding-right: 5vw;
+}
+
+.project h1{
+    color: #e9a75c;
+    font-family: glacial_indifferencebold;
+    padding-top: 35vmin;
+    font-size: 2.3vw;
+
+}
+
+.project h2 {
+    color: #c7d0d8;
+    font-size: 1.25vw;
+}
+
+.project a {
+    text-decoration: none;
+    user-select: none;
+    color: #c7d0d8;
+    font-size: 1.2vw;
+    border: #e9a75c solid 0.2vw;
+    padding: 1vh;
+    margin-left: 50vw;
+    position: relative;
+    top: 5vmin;
+}
+
+.project a:hover {
+    background-color: #e9a75c;
+    color: black;
+}

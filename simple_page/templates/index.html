@@ -2,24 +2,25 @@
 
 {% block title %} Home {% endblock %}
 {% block stylesheet %}
-<link href="../static/homeStylesheet.css" rel="stylesheet" type="text/css">
+{% load static %}
+<link href="{% static 'homeStylesheet.css' %}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto Condensed" />
 {% endblock %}
 {% block page_content %}
-<div id="content">
+<div id="content" style="background-image: url({% static 'home_headshot.png' %});">
     <div id="initial_view">
         <h1>April Dottin-Carter</h1>
         <h2>ASPIRING WEB DEVELOPER</h2>
-        <img class="quote" src="../static/quotes1.png">
-        <img class="quote" src="../static/quotes2.png">
-        <img class="quote" src="../static/quotes3.png">
+        <img class="quote" src="{% static 'quotes1.png' %}">
+        <img class="quote" src="{% static 'quotes2.png' %}">
+        <img class="quote" src="{% static 'quotes3.png' %}">
     </div>
-    <div id="mid_view">
+    <div id="mid_view" style="background-image: url({% static 'home_middle_background.png' %});">
         <h2>I love to design and build</h2>
         <h1>WEBSITES.</h1>
     </div>
 
-    <div id="bottom_view">
+    <div id="bottom_view" style="background-image: url({% static 'home_bottom_background.png' %});">
         <table id="about_table">
             <tr>
                 <td>
@@ -35,7 +36,7 @@
                     </h2>
                 </td>
                 <td>
-                    <img src="../static/pic1.JPG">
+                    <img src="{% static 'pic1.JPG' %}">
                 </td>
             </tr>
         </table>

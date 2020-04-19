@@ -1,5 +1,4 @@
 #initialView {
-    background-image: url("../static/InitialPortfolioBackground.png");
     position: absolute;
     top: 0;
     height: 100vh;
@@ -22,8 +21,6 @@
     padding-top: 15vmin;
     letter-spacing: 0.3vw;
     font-size: 2.5vw;
-    /*font-family: glacial_indifferenceitalic;*/
-
 }
 
 #initialView, .project {
@@ -44,18 +41,15 @@
 
 #WiCS {
     top: 0;
-    background-image: url("../static/WiCSBackground.png");
 }
 
 #meme {
     top: 109.8vmin;
-    background-image: url("../static/MemeSearchInatorBackground.png");
 }
 
 #classroom {
     height: 100vmin;
     top: 219.7vmin;
-    background-image: url("../static/ClassroomAnonymousBackground.png");
 }
 
 .project h1, .project h2 {

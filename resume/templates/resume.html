@@ -2,16 +2,16 @@
 
 {% block title %} Resume {% endblock %}
 {% block stylesheet %}
-<link href="../static/resumeStylesheet.css" rel="stylesheet" type="text/css">
+{% load static %}
+<link href="{% static 'resumeStylesheet.css' %}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto Condensed" />
 {% endblock %}
 {% block page_content %}
-<!--<div id="navbarBlock"></div>-->
 <div id="content">
         <table id="resumeTable">
         <tr>
             <td id="bio">
-                <img src="../static/Edited-Forward.jpg">
+                <img src="{% static 'Edited-Forward.jpg' %}">
                 <h1>APRIL <br>DOTTIN-CARTER</h1>
                 <h3>ASPIRING WEB DEVELOPER</h3>
             </td>
@@ -93,7 +93,7 @@
             <a href="mailto:aprilskye25@gmail.com?subject=Mail from Personal Site">aprilskye25@gmail.com</a><br>
             <a href="/">www.aprildottincarter.com</a><br>
             GITHUB: <a href="https://github.com/aprild-c">https://github.com/aprild-c</a><br>
-            <a href="../static/tech_resume.pdf" id="cv">Download CV</a>
+            <a href="{% static 'tech_resume.pdf' %}" id="cv">Download CV</a>
         </h3>
     </div>
 </div>

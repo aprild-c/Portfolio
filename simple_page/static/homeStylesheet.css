@@ -1,5 +1,4 @@
 #content {
-    background-image: url("../static/home_headshot.png");
     background-repeat: no-repeat;
     background-size: 100vmax 100vh;
     height: 100vh;
@@ -45,7 +44,6 @@
 }
 
 #mid_view {
-    background-image: url("../static/home_middle_background.png");
     background-repeat: no-repeat;
     background-size: 100vw 170vmin;
     height: 170vmin;
@@ -79,7 +77,6 @@
 }
 
 #bottom_view {
-    background-image: url("../static/home_bottom_background.png");
     background-repeat: no-repeat;
     background-size: 100vw 95vh;
     height: 90vh;

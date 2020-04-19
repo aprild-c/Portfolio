@@ -32,11 +32,24 @@
 }
 
 .quote {
-    position: relative;
-    width: 94vw;
-    top: 80vh;
-    left: 3vw;
-    margin-bottom: 18vh;
+    width: 85vw;
+    left: 5vw;
+}
+
+#top_quote {
+    position: absolute;
+    top: 145vmin;
+}
+
+#middle_quote {
+    left: 10vw;
+    position: absolute;
+    top: 205vmin;
+}
+
+#bottom_quote {
+    position: absolute;
+    top: 265vmin;
 }
 
 #initial_view::-webkit-scrollbar {

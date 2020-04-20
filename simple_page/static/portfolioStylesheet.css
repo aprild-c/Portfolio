@@ -1,3 +1,7 @@
+body {
+    background-color: #472525;
+}
+
 #initialView {
     position: absolute;
     top: 0;
